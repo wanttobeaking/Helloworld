@@ -15,3 +15,4 @@ Hashtable和HashMap
 
 关注点7，当size >= capacity*factor时就需要重新初始化存储数组，并对所有的元素重新hash；新的capacity，HashMap是原先的2倍，Hashtable是原先的两倍+1；
 
+HashMap map = new HashMap();
