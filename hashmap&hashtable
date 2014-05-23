@@ -1,0 +1,17 @@
+Hashtable和HashMap
+
+关注点1，capacity factor
+  容量和影响因子：放入元素的数量和resize的条件；
+  
+关注点2，数组加引用实现数据的存放，并不是所有的元素都存放在数组中，相同hash值得元素以链的形式存在；
+
+关注点3，Hashtable之所以同步，是所有的方法都加有syn关键字；
+
+关注点4，初始化时数组的时间点不同：HashMap当加入数据时才会初始化数组，Hashtable则是初始化变量时就初始化数组；
+
+关注点5，默认capacity， Hashtable：11， HashMap：16
+
+关注点6，数据是以Entry数组存储，使用的时候考虑该特性，特别是遍历的时候；
+
+关注点7，当size >= capacity*factor时就需要重新初始化存储数组，并对所有的元素重新hash；新的capacity，HashMap是原先的2倍，Hashtable是原先的两倍+1；
+
