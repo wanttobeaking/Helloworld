@@ -14,3 +14,5 @@ Hashtable和HashMap
 关注点6，数据是以Entry数组存储，使用的时候考虑该特性，特别是遍历的时候；
 
 关注点7，当size >= capacity*factor时就需要重新初始化存储数组，并对所有的元素重新hash；新的capacity，HashMap是原先的2倍，Hashtable是原先的两倍+1；
+
+关注点8，HashMap关于NULL Key的存储，是存储于table【0】。
